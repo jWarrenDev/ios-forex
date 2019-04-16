@@ -68,7 +68,7 @@ class ExchangeRateDetailViewController: UIViewController {
         }
     }
     
-    private var rates = [ExchangeRate]() {
+    private var rates = [exchangedata]() {
         didSet {
             DispatchQueue.main.async {
                 self.rateHistoryView?.exchangeRates = self.rates
